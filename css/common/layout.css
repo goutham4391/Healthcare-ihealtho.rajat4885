@@ -1,0 +1,231 @@
+html {
+    min-height: 100%;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;
+    overflow-y: hidden;
+    min-width: 1280px;
+}
+
+body.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+body > .header,
+body > .content,
+body > .footer {
+    width: 100%;
+}
+
+body > .header {
+    padding: 0 20px;
+    height: 115px;
+    background: #3a3f53; /* Old browsers */
+    background: -moz-linear-gradient(left, #3a3f53 0%, #3a3f53 37%, #3a3f53 37%, #2f5471 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #3a3f53), color-stop(37%, #3a3f53), color-stop(37%, #3a3f53), color-stop(100%, #2f5471)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #3a3f53 0%, #3a3f53 37%, #3a3f53 37%, #2f5471 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #3a3f53 0%, #3a3f53 37%, #3a3f53 37%, #2f5471 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #3a3f53 0%, #3a3f53 37%, #3a3f53 37%, #2f5471 100%); /* IE10+ */
+    background: linear-gradient(to right, #3a3f53 0%, #3a3f53 37%, #3a3f53 37%, #2f5471 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a3f53', endColorstr='#2f5471', GradientType=1); /* IE6-9 */
+}
+
+body > .content {
+}
+
+#main {
+    overflow: hidden;
+    position: relative;
+}
+
+body > .footer {
+    height: 95px;
+    background: #78868F;
+    color: white;
+    margin-top: -95px;
+    display: none;
+}
+
+.logo {
+    display: inline-block;
+    height: 100%;
+    float: left;
+    width: 170px;
+}
+
+.logo img {
+    margin-top: 35px;
+}
+
+.footer .logo img {
+    margin-top: 40px;
+    width: 120px;
+    height: auto;
+}
+
+.main-menu {
+    display: inline-block;
+    height: 100%;
+    float: left;
+    width: auto;
+    margin-left: 40px;
+}
+
+.main-menu a,
+.footer-menu a {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    padding: 0 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.0);
+}
+
+.main-menu > ul > li > a {
+    padding-top: 40px;
+    text-decoration: none;
+}
+
+.main-menu .nav > li > a:hover,
+.main-menu .nav > li > a:focus {
+    background: none;
+}
+
+.main-menu .nav .open > a,
+.main-menu .nav .open > a:hover,
+.main-menu .nav .open > a:focus {
+    background: none;
+}
+
+
+.main-menu a:hover,
+.main-menu a:active {
+    text-decoration: none;
+    color: #afcc1c;
+}
+
+
+.footer-menu a {
+    font-size: 13px;
+    padding-top: 45px;
+    letter-spacing: 1px;
+}
+
+.main-menu li.active a,
+.main-menu li.active a:hover {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-top: 2px solid #afcc1c;
+}
+
+.sett {
+    float: right;
+    padding-top: 40px;
+}
+
+.search-pr {
+    background: url(../../img/Search.png) center left no-repeat;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: none;
+}
+
+.search-pr input[type="text"] {
+    background: transparent;
+    color: white;
+    width: 160px;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+.search-pr input[type="text"]:focus {
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+}
+
+.menu-profile {
+    width: auto;
+    height: auto;
+    float: right;
+    display: inline-block;
+}
+
+.menu-profile a {
+    max-width: 200px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: auto;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    padding-right: 25px;
+    background: url(../../img/arr-d.png) center right no-repeat;
+    text-decoration: none;
+}
+
+.menu-profile a:hover {
+    color: #afcc1c;
+}
+
+.menu-profile.dropdown {
+    z-index: 4001;
+}
+
+#modal {
+    z-index: 5000;
+}
+
+body > .header {
+    z-index: 4001;
+    position: relative;
+}
+
+.page-title {
+    z-index: 4000;
+}
+
+body .modal-backdrop {
+    z-index: 4999;
+}
+
+.chat-right-on {
+    z-index: 4001;
+}
+
+body > span.select2-container {
+    z-index: 5000;
+}
+
+.not-found {
+    background-image: url(../../img/404.png);
+    background-position: center center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+body.doctor .file-preview {
+    background: #fff;
+}
+
+.search-link span{
+    border-bottom: 1px solid;
+}
+
+.search-link:hover span {
+    border-bottom: none;
+}

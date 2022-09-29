@@ -1,0 +1,33 @@
+.request-block {
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.request-block:hover {
+    opacity: 1;
+}
+.request-block > i {
+    font-size: 100px;
+    display: block;
+    padding-right: 0;
+}
+.request-block p {
+    font-size: 20px;
+}
+.request-block span.note {
+    font-size: 12px;
+}
+.request-block .action {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.request-block .price {
+    position: absolute;
+    top: 10px;
+    right: 70px;
+    border: 2px solid;
+    padding: 5px;
+    font-size: 20px;
+}

@@ -1,0 +1,53 @@
+.grid {
+    table-layout: fixed;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 15px;
+}
+
+.grid tr {
+    height: 70px;
+}
+
+.grid tr td,
+.grid tr th {
+    padding-left: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    position: relative;
+}
+
+.grid thead {
+    min-height: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #3E6280;
+}
+
+.grid tbody tr {
+    border-bottom: 1px solid #B2BDC4;
+}
+
+.grid tbody tr:last-child {
+    border-bottom: none;
+}
+
+.summary {
+    vertical-align: top;
+    display: inline-block;
+    padding: 10px 20px 0 0;
+    line-height: 55px;
+    color: #A2A2A2;
+    font-size: 12px;
+}
+
+.tab-content table.grid {
+    border-top-left-radius: 0;
+}
+
+.grid .user-link span {
+    line-height: 45px;
+}

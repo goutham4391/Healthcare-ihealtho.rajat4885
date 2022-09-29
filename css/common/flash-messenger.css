@@ -1,0 +1,7 @@
+.flash-messenger {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 4001;
+    width: 300px;
+}

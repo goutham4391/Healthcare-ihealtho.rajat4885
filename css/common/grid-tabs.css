@@ -1,0 +1,17 @@
+.grid-tabs {
+    border-bottom: 1px solid transparent;
+}
+
+.grid-tabs li:not(.active) a {
+    background-color: #3E6280;
+    color: #FFFFFF;
+}
+
+.grid-tabs.nav-tabs > li {
+    margin-right: 1px;
+}
+
+.grid-tabs.nav-tabs > li > a,
+.grid-tabs.nav-tabs > li > a:hover {
+    border: none;
+}

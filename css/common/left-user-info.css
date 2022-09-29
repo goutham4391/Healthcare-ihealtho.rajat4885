@@ -1,0 +1,16 @@
+.left-user-info {
+    padding: 10px 10% 0 10%;
+}
+
+.left-user-info .about-scroll {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 300;
+    overflow: hidden;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.left-user-info a.button{
+    width: 100%;
+}

@@ -1,0 +1,376 @@
+.chat-left {
+    position: relative;
+    float: left;
+    width: 450px;
+}
+
+.chat-right a,
+.chat-left a {
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.chat-right a:hover,
+.chat-left a:hover,
+.chat-right a:active,
+.chat-left a:active {
+    text-decoration: none;
+    opacity: 1;
+}
+
+.chat-left.collapsed {
+    width: 80px;
+}
+
+.chat-right {
+    position: relative;
+    float: right;
+    width: 250px;
+}
+
+.chat-right-on i {
+    padding-right: 0;
+}
+
+.chat-right-on {
+    width: 74px;
+    height: 74px;
+    float: right;
+    background-color: #16914F;
+    font-size: 40px;
+    text-align: center;
+}
+
+.title-control .chat-right-on {
+    color: #FFFFFF;
+}
+
+.chat-right-on:hover,
+.chat-right-on:active {
+    color: #fff;
+}
+
+.chat-right-on:hover {
+    opacity: 1;
+}
+
+.chat-right .chat-content a {
+    padding-left: 8%;
+}
+
+.chat-left .page-title i,
+.chat-right .page-title i {
+    font-size: 25px;
+    color: #FFFFFF;
+}
+
+.chat-left .page-title span,
+.chat-right .page-title span {
+    color: #ffffff;
+}
+
+.chat-right .page-title a {
+    float: right;
+    margin-right: 20px;
+}
+
+.chat-search {
+    width: 100%;
+    padding: 0 0 0 20px;
+    margin: 20px 0;
+}
+
+.chat-search input {
+    background: transparent;
+    color: #b1bcce;
+    width: 90%;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #b1bcce;
+    font-size: 16px;
+    padding-left: 30px;
+    background: url(../../img/chat-search.png) 10px center no-repeat;
+    border-radius: 6px;
+}
+
+.chat-left.collapsed .page-title {
+    padding: 0;
+}
+
+.chat-left.collapsed .page-title > span,
+.chat-left.collapsed .page-title > a,
+.chat-left.collapsed .page-title > .fa-user-md,
+.chat-left.collapsed .chat-content,
+.chat-left.collapsed .chat-search {
+    display: none;
+}
+
+.chat-left.collapsed .collapsed-controls {
+    display: block;
+    height: 74px;
+}
+
+.chat-left.expanded .page-title > span
+.chat-left.expanded .page-title > a {
+    display: inline;
+}
+
+.chat-left.expanded .page-title > a {
+    position: absolute;
+    right: 30px;
+    top: 0;
+}
+
+.chat-left.expanded .chat-content,
+.chat-left.expanded .chat-search {
+    display: block;
+}
+
+.chat-left.expanded .collapsed-controls {
+    display: none;
+}
+
+.chat-left .collapsed-controls a {
+    display: block;
+    height: 74px;
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+.chat-left .collapsed-controls a:last-child {
+    position: absolute;
+    z-index: 1;
+}
+
+.chat-left .chat-content a .user {
+    padding-right: 40px;
+}
+
+.chat-content a .user {
+    position: relative;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.chat-content a {
+    width: 100%;
+    padding: 0 0 0 5%;
+    line-height: 35px;
+    float: left;
+    color: #98A7BE;
+    display: table;
+    table-layout: fixed;
+}
+
+.chat-content a.active {
+    color: #FFFFFF;
+}
+
+.chat-content a.active > span.user-status{
+    background-color: #B0CB1F;
+}
+
+.chat-content > a > span.user-status {
+    float: left;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #3B3F53;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 0;
+    margin-top: 14px;
+}
+
+.user-ext {
+    color: #98A7BE;
+    float: right;
+    width: 40%;
+    background-color: #646e84;
+    min-height: 35px;
+    padding-left: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    white-space: nowrap;
+}
+
+.user-ext span {
+    width: 50%;
+    float: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.chat-panel {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    position: relative;
+    float: left;
+}
+
+.chat-panel .form-group {
+    margin: 30px 50px 0 50px;
+}
+
+.chat-panel a.attach,
+.chat-panel a.send,
+.chat-panel a.call {
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+}
+
+.chat-panel a.attach {
+    left: 20px;
+}
+
+.chat-panel a.send {
+    right: 15px;
+    font-size: 20px;
+}
+
+.chat-panel a.call {
+    right: 15px;
+    top: 60px;
+    font-size: 20px;
+}
+
+.panel-status {
+    margin: 30px 0 0 40px;
+}
+
+.messages {
+    width: 70%;
+    padding: 0 0 30px 40px;
+    float: left;
+}
+
+.message {
+    display: inline-block;
+    width: 80%;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+
+.patient-message {
+    float: left;
+    background-color: #FEFBE7;
+    text-align: left;
+}
+
+.answer-message {
+    float: right;
+    background-color: white;
+    text-align: right;
+}
+
+.message-date {
+    display: inline-block;
+    width: 100%;
+    font-size: 11px;
+}
+
+.message-av {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-right: 15px;
+    background-size: cover;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/*Statuses*/
+
+.chat-status,
+.chat-type {
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.chat-status.in_progress {
+    background-color: #068fc8;
+}
+
+.chat-status.answered {
+    background-color: #38BD7B;
+}
+
+.chat-status.wait_for_response {
+    background-color: #EF7F1A;
+}
+
+.chat-status.ended {
+    background-color: #a7a7a7;
+}
+
+.chat-type.single,
+.chat-type.subscription,
+.chat-type.prioritized {
+    background-color: #38BD7B;
+}
+
+.chat-type.free {
+    background-color: #a7a7a7;
+}
+
+.chat-type.failed {
+    background-color: #D8000C;
+}
+
+.chat-panel textarea {
+    resize: none;
+}
+
+.chat-left .unread-messages,
+.chat-right .unread-messages {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: #3A3F53;
+    position: absolute;
+    right: 5px;
+    top: 8px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.js-ct-files .file {
+    padding-left: 30px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.chat-panel .help-block {
+    display: none;
+}
+
+.timer {
+    color: #565656;
+    min-width: 62px;
+}
+
+.time-left {
+    z-index: 4001;
+    line-height: 74px;
+    float: right;
+    padding-right: 20px;
+}
+
+.profile-full .page-title,
+.chat-full .page-title {
+    margin-top: -74px;
+}

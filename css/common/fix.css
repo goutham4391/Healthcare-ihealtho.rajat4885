@@ -1,0 +1,16 @@
+input[data-datepicker-type="1"],
+input[data-krajee-daterangepicker] {
+    background: url(../../img/select-date.png) 97% center no-repeat;
+    background-color: #FFFFFF;
+}
+.fa.fa-error:before {
+    content: "\f00d";
+}
+.fa.fa-success:before {
+    content: "\f05d";
+}
+
+.fa.fa-usd,
+.fa.fa-eur {
+    padding-right: 2px;
+}

@@ -1,0 +1,1209 @@
+body {
+    min-width: 320px;
+}
+
+.navigation__icon {
+    width: 24px;
+    height: 22px;
+    border-top: 2px solid #3BC0C3;
+    border-bottom: 2px solid #3BC0C3;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    z-index: 11;
+}
+
+.navigation__icon:after {
+    content: "";
+    height: 10px;
+    display: block;
+    border-bottom: 2px solid #3BC0C3;
+}
+
+/* common style changes */
+body > .header {
+    z-index: 4500;
+}
+.sett {
+    padding-top: 32px;
+}
+.menu-profile .dropdown-menu a {
+    background: none;
+}
+.menu-profile a.dropdown-toggle {
+    margin-top: 6px;
+}
+#contacts-toggle {
+    margin-right: 0;
+}
+#activity-toggle,
+.activity-left .activity-left-off,
+#profile-toggle,
+.profile-left-column .profile-left-off {
+    display: none;
+}
+.chat-panel {
+    min-height: 150px;    
+    overflow: hidden;
+}
+.chat-full .page-title > span {    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+#main > .column.width100 .tab-switch {
+    display: none;
+}
+#payment-info .grid-tabs {
+    clear: left;
+}
+.chat-scroll .message a {    
+    max-width: 230px;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+}
+a.button.chat-pay-button {
+    line-height: 20px; 
+    float: right; 
+    margin-top: 20px;
+}
+
+a.button.payments-button {
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 15px;
+    margin: 20px 20px 10px;
+}
+a.button.payments-button .fa {
+    font-size: 16px;
+}
+
+/* media queries */
+@media (max-width: 1467px) {
+    .chat-right, .activity-left, .profile-left-column {
+        width: 225px;
+    }
+    .chat-left {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .page-title {
+        padding: 0 0 0 10px;
+    } 
+    .title-control .filters {
+        width: 120px;
+    }
+    .dashboard-invitations {
+        width: 100%;
+    }
+    .chat-left {
+        width: 225px;
+    }
+
+    #sign-up-box {
+        min-width: 300px;
+    }
+    .sign-up h2 {
+        font-size: 50px;
+    }
+
+    #sign-up-box.width40 {
+        width: 100%;
+        max-width: 510px;
+    }
+
+    .menu-profile a.dropdown-toggle {
+        max-width: 180px;       
+    }
+
+    .activity-left, .profile-left-column {
+        width: 200px;
+    }
+    .user-photo-square {
+        height: 200px;
+    }
+    .standard-wrapper {
+        padding: 10px;
+    }
+    .profile-full .profile:not(.patient) .information .table {
+        table-layout:fixed;
+    }
+    .profile-full .profile:not(.patient) .information .table tr td:last-child:not(.about-td){
+        width: 180px;
+        padding-left: 30px !important;
+    }
+    .profile .top .information .title > span {
+        padding-right: 20px;
+    }
+    .profile.outer .bottom .width40,
+    .profile.outer .bottom .width60 {
+        width: 100%;
+    }
+    .profile.outer .map{
+        width: 340px;
+    }
+    .profile.outer  .top .information {        
+        color: #000;
+    }
+}
+
+@media (max-width: 1195px) {    
+    .activity-left ~ .chat-right {
+        position: absolute;
+        float: none;
+        z-index: 4001;
+        right: 0px;
+        display: none;
+    }
+    .page-title-grey .page-title {
+        padding-right: 74px;
+    }    
+    .title-control#contacts-toggle {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+    .payment .column.pdr5 {
+        padding-right: 7%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .page-title, 
+    .title-control a.title-button,
+    .title-control {
+        line-height: 59px;
+    }
+    .page-title {
+        height: 59px;
+    }
+    .chat-right-on {
+        width: 59px;
+        height: 59px;
+    }
+    .search-switcher {    
+        margin: 13px 10px 12px;
+    }
+    .title-control a.title-button {
+        padding: 0 15px;
+    }
+    .chat-scroll,
+    .full-height-scroll {
+        margin-top: 59px;
+    }
+    
+    .profile-full .page-title, .chat-full .page-title {
+        margin-top: -59px;
+    }
+    .feed-form {
+        top: 59px;
+    }
+    .profile-full .page-title {
+        margin-top: -59px;
+    }
+    .payment .total-income {
+        width: 100%;
+    }
+    .profile .main-photo {
+        height: 150px;
+        width: 165px;
+    }
+    .profile .top .information {
+        padding-left: 235px;
+    }
+    a.button.chat-pay-button {
+        margin-top: 12px;
+    }
+    .time-left {
+        line-height: 59px;
+    }
+    a.button.payments-button {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    body > .header {
+        min-height: 80px;
+        height: auto;
+    }
+    .logo {
+        width: 115px;
+    }
+    .logo img {
+        width: 115px;
+        height: auto;
+        margin-top: 26px;
+    }
+    .main-menu a, .footer-menu a {
+        font-size: 14px;
+    }
+    .main-menu > ul > li > a {
+        padding-top: 31px;
+    }
+    .lang-switch {
+        margin-top: 22px;
+    }
+    .sett {
+        padding-top: 24px;
+    }
+    .av {
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+    }
+    .chat-right {
+        position: absolute;
+        float: none;
+        z-index: 4001;
+        right: 0px;
+        display: none;
+    }
+    .menu-profile a.dropdown-toggle {
+        margin-top: 0;
+        font-size: 14px;
+        max-width: 160px;
+    }
+    
+    
+    .column.width100 .page-title,
+    #main .column.js-feed .page-title,
+    #main > .page-title,
+    .page-title-grey .page-title {
+        padding-right: 59px;
+    }
+    .activity-left, .profile-left-column {
+        position: absolute;
+        left: 0px;
+        z-index: 4001;
+        display: none;
+    }
+
+    #main .column.width50:first-of-type .page-title {
+        padding-left: 69px;
+    }
+
+    #main .column.js-feed .page-title {
+        padding-left: 20px;
+    }
+
+    #activity-toggle, #profile-toggle {
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    #activity-toggle .activity-left-on, 
+    #profile-toggle .profile-left-on  {
+        width: 59px;
+        height: 59px; 
+        background-color: #16914F;
+        text-align: center;
+        color: #FFFFFF;
+        display: block;
+    }
+    #activity-toggle .activity-left-on .fa, 
+    #profile-toggle .profile-left-on .fa {
+        font-size: 28px;
+        line-height: 29px;
+        vertical-align: -15%;
+        padding: 0;
+    }
+
+    .activity-left .activity-left-off,
+    .profile-left-column .profile-left-off {
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 1;
+        width: 59px;
+        height: 59px;
+        text-align: center;
+        line-height: 59px;
+        font-size: 22px;
+        color: #fff;
+        background: rgba(0,0,0,0.2);
+        border-bottom-left-radius: 37px;
+        box-sizing: border-box;
+        padding-left: 10px;
+    }
+    #main > .page-title .fa-user {
+        margin-left: 65px;
+    }
+    .chat-left { 
+        position: absolute;
+        left: 0px;
+        z-index: 4001;
+    }
+    .chat-left.collapsed {
+        width: 59px;
+        position: relative;
+    }
+    .dashboard .standard-wrapper {
+        padding: 0px;
+    }
+    .dashboard-block {
+        width: 100%;
+        height: auto;
+    }
+    .chat-left.expanded .page-title > a {
+        position: absolute;
+        right: 17px;
+        top: 3px;
+    }
+    .grid tr td, 
+    .grid tr th {
+        padding: 5px 8px 5px 12px;        
+    }
+    .payment .column.pdr5 {
+        width: 100%;
+        padding: 0;
+    }
+    .payment .with-icon {
+        min-height: 38px;
+    }
+    .payment .column.width20:after,
+    .payment .column.pdr5:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .payment .column.width20 {
+        float: none;
+        clear: both;
+        margin: 40px auto 30px;
+        width: 100%;
+        max-width: 300px;
+    }
+    .payment .grid-tabs {
+        clear: both;
+    }
+    
+    .lang-de .menu-profile a.dropdown-toggle {
+        max-width: 130px;        
+    }
+    .lang-de  .modal-link[href='edit-rates'], 
+    .lang-de .modal-link[href='edit-payment-info'] {
+        font-size: 12px;
+    }
+    .lang-de .modal-link[href='edit-rates'] {
+        margin-right: -40px;
+    }
+    .lang-de .right-user-info a.button{
+        font-size: 15px;
+        
+    }
+    .lang-de .right-user-info a.button i {
+        margin-right: 6px;
+        font-size: 15px;
+        padding: 7px 12px;
+    }
+    .lang-de .right-user-info .brief-row p {
+        font-size: 15px;
+    }    
+    .chat-scroll .message a {    
+        max-width: 190px;
+    }
+    a.button.payments-button {
+        margin-right: -40px;
+    }
+    .profile.outer .top > table > tbody > tr > td {
+        display: block;
+        padding: 0;
+    }
+    .profile.outer .map {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .main-menu {
+        margin-left: 20px;
+    }
+    .lang-switch {
+        margin-left: 0;
+    }
+    .main-menu .nav > li > a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #sign-up-box.width70 {
+        width: 85%;
+    }
+    #main .column.width50:first-of-type .page-title .title-control:last-of-type{
+        margin-right: 5px;
+    }
+    #main .column.width50:first-of-type .search-link span {
+        font-size: 18px;
+    }
+    .page-title-grey .page-title > span{
+        font-size: 18px;
+    }
+    .title-control .filters {
+        width: 95px;
+    }
+    .title-control .filters > ul {
+        position: absolute;
+    }
+    .title-control .filters ul li {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .profile-right-column {
+        width: 225px;
+    }
+    .chat-panel .column.width50 {
+        width: 100%;
+    }
+    .grid tr th {
+        font-size: 12px;
+    }
+    .profile .main-photo {
+        left: 20px;
+        top: 20px;
+    }
+    .profile .top .information {
+        padding-left: 205px;
+    }
+    .profile-full .profile:not(.patient) .information .table .photo{
+        width: 100px;
+        height: 100px;
+    }
+    .profile-full .profile:not(.patient) .information .table tr td:last-child:not(.about-td) {
+        width: 120px;
+        padding-left: 20px !important;
+    }
+    .chat-scroll .message a {    
+        max-width: 130px;
+    }
+    .chat-full .page-title > span {
+        max-width: 255px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .feed-popup .feed-content .wrapper {
+        min-height: 350px;
+    }
+    .feed-popup .user-info .user-photo-square {
+        height: 133px;
+    }
+    .profile:not(.patient) .information .table tr th:last-child,
+    .profile:not(.patient) .information .table tr td:last-child:not(.about-td) {
+        padding-left: 20px !important;
+    }
+    .chat-full .page-title > span {
+        max-width: 220px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        padding-top: 59px;
+    } 
+    body > .header {
+        min-height: 59px;
+        height: auto;
+        top: 0;        
+        position: fixed;
+    } 
+    .logo {
+        width: 90px;
+    }
+    .logo img {
+        width: 90px;
+        height: auto;
+        margin-top: 18px;
+    }
+    .main-menu {
+        display: none;
+        margin: 0;
+        float: none;
+        clear: both;
+        padding: 20px 0 0;
+    }
+    .main-menu ul li.active a, 
+    .main-menu ul li.active a:hover {
+        border: none;
+    }
+    .main-menu > ul > li {
+        display: block;
+        border-top: 1px dotted rgba(255,255,255,0.3);
+    }
+    .main-menu > ul > li:first-child {
+        border-top: none;
+    }
+    .main-menu > ul > li > a {
+        padding: 10px 0;
+    }
+    .main-menu ul .dropdown-toggle .caret {
+        display: none;
+    }
+    .main-menu ul .dropdown-menu {
+        position: initial;
+        display: block;
+        float: none;
+        background: none;
+        box-shadow: none;
+        border: none;
+        margin-bottom: 10px;
+    }
+    .main-menu ul .dropdown-menu a {
+        color: #fff;
+        background: none;
+    }
+    .main-menu ul .dropdown-menu a:hover,
+    .main-menu ul .dropdown-menu a:active {
+        background: none;    
+        color: #afcc1c;
+    }
+    .navigation__icon {
+        display: block!important;		
+    }
+    .lang-switch {
+        margin-top: 8px;
+        float: right;
+        margin-right: 0;
+    }
+    .header .wrapper > .lang-switch,
+    .header .wrapper > .sett {
+        display: none;
+    }
+    .sett {
+        float: left;
+        padding: 10px 20px 20px 0;
+    }
+    .menu-profile a.dropdown-toggle {
+        padding-left: 10px;
+        border-top: none;
+    }
+    #main.padded {
+        width: 100%;
+        padding-top: 59px;
+    }
+    .sign-up #main {
+        padding-top: 0;
+    }
+    #main > .column.width50 {
+        width: 100%;
+    } 
+    #sign-up-box.width70 {
+        width: 100%;
+    }
+    .sign-up #sign-up-box .form {
+        padding: 10px 20px;
+    }
+    .form .help-block {
+        font-size: 11px;
+        margin: 3px 0 10px 0;
+    }
+    .search {
+        min-width: 320px;
+        box-sizing: border-box;
+    }
+    .search .search-results {
+        padding: 20px;
+    } 
+    #activity-toggle, #profile-toggle {        
+        top: 0px;
+        right: 0px;
+        left: auto;
+        margin: 0;
+    }   
+    #main > .page-title .fa-user {
+        margin-left: 0;
+    }  
+    #main > .page-title {
+        padding-left: 20px;
+    }
+    #main > .column .page-title {
+        padding-left: 20px;
+    }
+    #main > .column.width50:first-of-type .page-title {
+        padding: 0 63px 0 20px;
+    } 
+    #main > .column.width50 {   
+        z-index: 0;
+        position: absolute;
+        top:0px;
+        min-height: 59px;
+    }
+    .tab-switch {
+        text-align: center;
+        display: block;
+        width: 100%;
+        height: 59px;
+        background: rgba(0,0,0,0.7);
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 9999;
+        cursor: pointer;
+    }
+    .tab-switch:before {
+        color: #ffffff;
+        font: normal normal normal 30px/59px FontAwesome;        
+        content: "\f107";
+    }
+    .active-side .tab-switch {
+        display: none;
+    }
+    #main > .column.width50.active-side {
+        top: 0;
+        position: relative; 
+        z-index: 1;
+    }
+    #main > .column.width50 .full-height-scroll {
+        display: none;
+    }
+    #main > .column.width50.active-side .full-height-scroll {
+        display: block;
+    }
+    .activity-left, .profile-left-column {
+        left: auto;
+        right: 0;
+    }
+    .chat-right {
+        padding-bottom: 59px;
+    }
+    .profile-right-column {
+        width: 59px;    
+        position: absolute;
+        right: 0px;
+        z-index: 4001;
+        height: 59px;
+    }
+    .profile-right-column .user-photo-square {
+        height: 59px;
+    }
+    .profile-right-column .user-photo-square a {
+        background: none;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .right-user-info {
+        display: none;
+    }
+    .modal-link[href='edit-rates'],
+    .modal-link[href='edit-payment-info'] {
+        font-size: 12px;
+    }        
+    
+    .lang-de .modal-link[href='edit-rates'],
+    .lang-de .modal-link[href='edit-payment-info'] {
+        font-size: 11px;        
+    }
+
+    .modal-link[href='edit-rates'] {
+        margin-right: -40px;
+        position: relative;
+        left: 0;
+        top: 2px;
+        display: block;
+    }
+    .page-title .fa-credit-card ~ span {
+        font-size: 16px;
+    }
+    .profile .main-photo {
+        float: left;
+        position: initial;
+        margin: 20px;
+    }
+    .profile .top .information {
+        padding: 0 20px 20px;
+        clear: both;
+        width: 100%;
+    }
+    .profile .top .information .title {
+        padding-top: 0;
+    }
+    .profile-full .profile:not(.patient) .information .table tr td:last-child:not(.about-td) {
+        width: 100px;
+    }
+    .profile .top .information .title > span {
+        clear: right;
+        display: block;
+        line-height: 30px;
+        margin-bottom: 12px;
+    }
+    .modal-dialog {
+        width: 90% !important;
+        margin-top: 20px !important;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    .profile.patient .bottom  {
+        margin: 0 0px;
+        padding: 10px;
+    }
+    .profile.patient .bottom h4.title {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .profile.patient .bottom .info-block {
+        width: 50%;
+        margin: 0;
+        padding: 0 10px;
+        box-sizing: border-box;
+        float: left;
+    }
+    .profile.patient .bottom .info-block:nth-of-type(2n+1) {
+        clear: left;
+    }
+    .profile.patient .bottom:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .profile.patient .information table tr td.value {
+        font-size: 14px;
+    }
+    .profile.patient .bottom .wrapper {
+        margin: 0;
+    }
+    .form .column.width33 {
+        width: 100%;
+    }
+    .panel-status {
+        display: none;
+    }
+    .chat-panel {
+        height: 115px;
+        min-height: 115px;
+        z-index: 4001;
+    }
+    .pay-popup .request-block .price{
+        right: 20px;
+    }
+    .pay-popup .request-block > i {
+        font-size: 77px;
+    }
+    .pay-popup .request-block .action {
+        font-size: 27px;
+    }
+    .pay-popup .request-block {
+        padding-top: 50px;
+    }
+    a.button.chat-pay-button {
+        margin-right: 70px; 
+    }
+    .time-left {
+        margin-right: 50px;
+    }
+    a.button.payments-button {
+        margin-right: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .sign-up #sign-up-box .form { 
+        padding: 0px 20px 10px;
+    }
+    .sign-up h2 {
+        font-size: 34px;
+    }
+    .btn.sign-up-button {
+        height: 44px;
+        line-height: 44px;
+    }
+    #sign-up-box.width33 .btn.sign-up-button {
+        margin-top: 0;
+    }
+    .form .column.width50 {
+        width: 100%;
+        float: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .dashboard-block .form .column.width50 {
+        padding: 10px;
+    }
+    .form .form-group.field-invitepatientsform-message {        
+        padding: 0 10px;
+    }
+    .chat-left .page-title i, .chat-right .page-title i {
+        font-size: 18px;
+    }
+    .page-title {
+        height: 40px;
+    }
+    .page-title, .title-control a.title-button, .title-control {
+        line-height: 40px;
+    }    
+    .chat-right-on {
+        width: 40px;
+        height: 40px;
+    } 
+    #activity-toggle .activity-left-on,
+    #profile-toggle .profile-left-on {
+        width: 40px;
+        height: 40px;
+    }
+    .column.width100 .page-title,
+    #main .column.js-feed .page-title,
+    #main > .page-title,
+    .page-title-grey .page-title {
+        padding-right: 40px;
+    } 
+    .chat-scroll,
+    .full-height-scroll {
+        margin-top: 40px;
+    }
+    .profile-full .page-title, .chat-full .page-title {
+        margin-top: -40px;
+    }
+    .feed-form {
+        top: 40px;
+    }
+    #main.padded {     
+        padding-top: 40px;
+    }
+    .sign-up #main {
+        padding-top: 0;
+    }
+    #main > .column.width50:first-of-type .page-title {
+        padding: 0 40px 0 20px;
+    }
+    .search-switcher {
+        margin: 5px 10px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .search-switcher a {
+        height: 28px;
+        line-height: 28px;
+    }
+    .search-switcher a i {
+        top: 6px;
+    }
+    .title-control .filters {
+        margin-top: 0px;        
+        display: block;
+        top: 6px;
+    }
+    #main > .column .page-title .fa-lg {
+        font-size: 19px;
+        line-height: 19px;
+        vertical-align: 00;
+    }
+    .tab-switch {
+        height: 40px;
+    }
+    .tab-switch:before {
+        height: 40px;
+        line-height: 40px;
+    }
+    .main-menu {
+        padding: 10px 0 0;
+    }
+    .main-menu ul .dropdown-menu {
+        margin-bottom: 8px;
+    }
+    .main-menu > ul > li > a {
+        padding: 8px 0;
+    }
+    .dropdown-menu > li > a {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .chat-right {
+        padding-bottom: 40px;
+    }
+    #main > .column.width50:before {
+        line-height: 40px;
+        height: 40px;
+    }
+    .dashboard-block {
+        padding: 10px;
+    }
+    .form .form-group.field-invitepatientsform-emails {
+        padding-bottom: 140px;
+    }
+    .form .form-group.field-invitepatientsform-message {
+        position: absolute;        
+        top: -190px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 2%;
+    }
+    .dashboard-block #w6 .column:last-of-type {
+        padding: 0;
+    }
+    .chat-left.collapsed {
+        width: 40px;
+    }
+    .profile-right-column {
+        width: 40px;
+        height: 40px;
+    }
+    .profile-right-column .user-photo-square {
+        height: 40px;
+    }
+    .chat-left.expanded .page-title > a {
+        top: 2px;
+    }
+    .profile-full .page-title {
+        margin-top: -40px;
+    }
+    .profile-full .profile:not(.patient) .information .table tr td:last-child {
+        width: 75px;
+        padding-left: 10px !important;
+    }
+    .profile-full .profile:not(.patient) .information .table .photo {
+        width: 75px;
+        height: 75px;
+    }    
+    .modal-link[href='edit-rates'],
+    .modal-link[href='edit-payment-info'] {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        display: block;
+        width: 32px;   
+        margin: 0;
+        position: relative;
+    }
+    .modal-link[href='edit-rates'] .fa,
+    .modal-link[href='edit-payment-info'] .fa {
+        position: absolute;
+        top: 9px;
+        text-indent: 0;
+        left: 5px;
+        font-size: 20px;
+    }
+    #main > .page-title > .title-control {
+        padding-right: 0 !important;
+    }
+    .chat-list .grid tr th:last-child,
+    .chat-list .grid tr td:last-child {
+        display: none;
+    }
+    .chat-list #w1-tabpatient .grid tr th:nth-last-child(2),
+    .chat-list #w1-tabpatient .grid tr td:nth-last-child(2) {
+        display: none;        
+    }  
+    #clinic-info-table,
+    #doctor-info-table {
+        display: none; 
+    }
+    #clinic-info-list.hidden,
+    #doctor-info-list.hidden {
+        display: block !important;
+    }
+    #clinic-info-list li,
+    #doctor-info-list li {
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    #clinic-info-list li.row-label,
+    #doctor-info-list li.row-label {
+        color: #B2BDC4;
+        margin-bottom: 5px;
+    }
+    #doctor-info-list .photo {
+        position: initial !important;
+    }
+    a.button.chat-pay-button {
+        margin-right: 45px;
+        width: 45px;
+        margin-top: 2px;
+    }
+    .time-left {
+        line-height: 40px;
+        margin-right: 30px;
+        font-size: 16px;
+    }
+    .grid tr .hide-mobile {
+        display: none;
+    }
+    a.button.payments-button {
+        height: 34px;
+        line-height: 34px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 490px) {    
+    .feed {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 10px 0; 
+    }
+    .feeds {
+        min-width: 300px;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    #js-feeds-container {
+        padding: 0 10px;        
+    }
+    .search .search-results {
+        padding: 5px 10px;
+    }
+    #main .column.js-feed .page-title {
+        padding-left: 10px;
+    }
+    #main > .column.width50:first-of-type .page-title {
+        padding-left: 10px;
+    }
+    #main > .column .page-title {
+        padding-left: 10px;
+    }
+    .dashboard-block .left.column, .dashboard-block .right.column {
+        width: 100%;
+        float: none;
+    }    
+    .chat-full .page-title {
+        padding-right: 60px;
+    }
+    .chat-full .page-title > span {
+        display: block;
+        max-width: 200px;
+        font-size: 16px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 37px;
+    }
+    .profile-full .profile:not(.patient) .information .table tr td:last-child {
+        display: none;
+    }
+    .profile.patient .bottom h4.title {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .profile.patient .bottom .info-block {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .feed-popup .feed-content .answer .content {
+        padding-left: 0px;
+        padding-top: 40px;
+    }    
+    .pay-popup  .width50{
+        width: 100%;
+    }
+    a.button.chat-pay-button {
+        margin-right: -15px;
+    }
+    .time-left {
+        padding-right: 0;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .form .column.width50 {
+        padding: 0;
+    }
+    .form .form-group[class^="width"].field-patientprofile-first_name,
+    .form .form-group[class^="width"].field-patientprofile-middle_name{
+        width: 100%;
+        padding: 0;
+    }
+    .search-switcher {
+        width: 95px;
+    }
+    .search-switcher a {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .user-photo-square {
+        height: 150px;
+    }
+    .title-control {
+        margin-right: 10px;
+    }
+    .title-control a.title-button {
+        padding: 0 10px;
+    }
+    .profile .top .information {
+        padding: 0 10px 10px;
+    }
+    .profile .main-photo {
+        margin: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 254px;
+        height: 200px;
+    }
+    .feed-popup .user-info .user-photo-square {
+        height: 85px  !important;
+    }
+    .feed-popup .feed-content .wrapper {
+        padding-bottom: 10px;
+        min-height: 255px !important;
+    }
+    .brief-row span, .brief-row .brief-row-title {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .brief-row p {
+        font-size: 15px;
+        margin: 0 0 8px;
+    }
+    .brief-row:last-of-type,
+    .brief-row:last-of-type p {
+        margin: 0;
+    }
+    .feed-popup-footer textarea.form-control {
+        height: 52px;
+    }
+    .feed-popup-footer .form {
+        margin: 0;
+    }
+    .modal-header {
+        padding: 10px 15px !important;
+    }
+    .modal-header .close {
+        margin-top: -6px;
+    }
+    .profile.patient .information .table tr,
+    .profile.patient .information .table td {
+        display: block;
+        width: 100%;
+    }
+    .page-title .fa-credit-card ~ span {
+        font-size: 14px;
+    }
+    .page-title .fa-credit-card {    
+        font-size: 15px;
+    }
+    .time-left {        
+        margin-right: -13px;
+        font-size: 12px;
+    }
+    .profile.outer .top .information .title h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width: 380px) {
+    .time-left {
+        display: none;
+    } 
+    .chat-full .page-title > span {
+        max-width: 155px;
+    }
+    .feed-popup .feed-content .date {
+        font-size: 10px;        
+        line-height: 20px;
+    }
+    .feed-popup .feed-content .answer {
+        padding: 10px 12px;
+    }
+}

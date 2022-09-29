@@ -1,0 +1,181 @@
+.dashboard-block .notification {
+    float: left;
+    width: 48%;
+    margin: 3% 2% 0 0;
+}
+
+.dashboard-block .notification:last-child {
+    margin-right: 0;
+}
+
+.notification {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 290px;
+    margin: 0 20px 20px 0;
+    height: 150px;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.notification.read:hover {
+    opacity: 1;
+}
+
+.notification.read {
+    opacity: .3;
+}
+
+.notification h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 100;
+}
+
+.notification p {
+    font-size: 14px;
+    font-weight: 300;
+    height: 70px;
+    overflow-y: auto;
+}
+
+.notification > i {
+    position: absolute;
+    font-size: 130px;
+    top: 10px;
+    right: 10px;
+    opacity: 0.1;
+}
+
+.notification .mark-as-read {
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    font-size: 26px;
+    color: #6B6B6B;
+}
+
+.dashboard-block.auto-height {
+    height: auto;
+}
+
+.dashboard-block.full-width {
+    width: 100%;
+}
+
+.dashboard-block {
+    float: left;
+    width: 50%;
+    height: 440px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.dashboard-block .title {
+    color: #00A0E3;
+    font-weight: 600;
+    font-size: 19px;
+    margin: 0 0 20px 0;
+}
+
+.dashboard-block .title i {
+    font-size: 25px;
+}
+
+.dashboard-block .squared-box {
+    padding: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    background-color: #f4f6f9;
+}
+
+.dashboard-block .left,
+.dashboard-block .right {
+    padding: 5px 10px;
+}
+
+.dashboard-block .left {
+    padding-top: 20px;
+}
+
+.invitation-logo {
+    width:130px;
+    height:100px;
+    float:left;
+    border-right:1px solid #C5C6C6;
+    margin-right:15px;
+    vertical-align:middle;
+}
+
+.invitation-logo img {
+    vertical-align:middle;
+}
+
+.dashboard-invitations {
+    width: 48%;
+    margin: 0 2% 2% 0;
+    float: left;
+    color: #666666;
+    padding: 2% 2%;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    background-color: #FFFFFF;
+}
+
+.invitations-icon {
+    width: 27px;
+    height: 45px;
+    float: left;
+    margin-right: 12px;
+    background: url(../../img/invitations-icon.png) center center no-repeat;
+}
+
+
+.dashboard-btn {
+    display:inline-block;
+    float:left;
+    padding:5px 8px;
+    font-size:13px;
+    border-radius:4px;
+    font-weight:300;
+    color:white;
+    text-decoration:none;
+}
+
+
+.dashboard-invitations p {
+    font-size:14px;
+    font-weight:300;
+    margin:0;
+    margin-bottom:10px;
+}
+
+.dashboard-invitations p a {
+    font-size:18px;
+    font-weight:500;
+    color:#00A0E3;
+}
+
+.accept-btn {
+    background: url(../../img/accept.png) 10px center no-repeat;
+    font-weight:400;
+    font-size:13px;
+    border:1px solid #009846;
+    color:#009846;
+    padding-left:28px;
+    margin-right:10px;
+}
+
+.decline-btn {
+    background: url(../../img/decline.png) 10px center no-repeat;
+    font-weight:400;
+    font-size:13px;
+    border:1px solid #C5C6C6;
+    color:#C5C6C6;
+    padding-left:28px;
+}
+
+.dashboard-block input[data-datepicker-type="1"],
+.dashboard-block input[data-krajee-daterangepicker] {
+    font-size: 11px;
+}

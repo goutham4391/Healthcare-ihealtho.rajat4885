@@ -1,0 +1,24 @@
+.call-container {
+    text-align: center;
+}
+
+.call-container .callee img{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.call-container .buttons {
+    margin-top: 10px;
+}
+
+.call-container #remoteVideo {
+    width: 100%;
+}
+
+.call-container #localVideo {
+    width: 200px;
+    position: absolute;
+    bottom: 84px;
+    right: 25px;
+}
+

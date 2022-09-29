@@ -1,0 +1,214 @@
+.feeds {
+    padding: 10px;
+    min-width: 400px;
+}
+
+.feed {
+    margin: 10px;
+    width: 210px;
+    display: inline-block;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.feed .header {
+    background-color: #E4E4E4;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    overflow: hidden;
+    height: 60px;
+}
+
+.feed .header .photo {
+    display: inline-block;
+    width: 65px;
+    height: 60px;
+    border-top-left-radius: 7px;
+    background-size: cover;
+    position: absolute;
+}
+
+.feed .header .info {
+    padding: 0 0 0 65px;
+}
+
+.feed .header .info .top {
+    padding: 0 0 0 5px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.feed .header .info .top a,
+.feed .header .info .top span {
+    color: #00A0E3;
+}
+
+.feed .header .info .bottom {
+    font-size: 12px;
+    font-weight: 500;
+    background-color: #f4f8fb;
+    height: 25px;
+    line-height: 25px;
+}
+
+.feed .header .info .bottom > div {
+    padding: 0 0 0 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    float: left;
+}
+
+.feed .content,
+.feed .footer {
+    padding: 5% 5%;
+}
+
+.feed .content {
+    line-height: 1.4;
+    width: 100%;
+}
+
+.feed .content .caption {
+    font-size: 16px;
+    color: #3B3F53;
+    font-weight: 500;
+}
+
+.feed .footer {
+    color: #ED6D1E;
+    background-color: #dadada;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    line-height: 18px;
+}
+
+.feed .footer span {
+    color: #000000;
+    font-size: 12px;
+}
+
+.feed .answer-button {
+    color: #ED6D1E;
+    padding: 6px 0 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #B2BDC4;
+    margin: 10px 5px;
+}
+
+.feed .answer-button a {
+    color: #ED6D1E;
+    font-size: 14px;
+}
+
+.feed .answer-button-footer {
+    float: right;
+    font-size: 16px;
+}
+
+.feed .answer-button-footer:hover {
+    text-decoration: underline;
+}
+
+.feed-form {
+    top: 74px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 3% 5% 20px 5%;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 3px solid #3BC0C3;
+    border-top: 3px solid #3BC0C3;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+}
+
+.feed-popup .feed-content .wrapper {
+    padding: 10px 5% 40px;
+    min-height: 500px;
+}
+
+.feed-popup .feed-content .title {
+    font-size: 22px;
+    color: #3B3F53;
+    margin: 0 0 5px 0;
+}
+
+.feed-popup .feed-content .date {
+    font-size: 11px;
+    color: #B2BDC4;
+    margin-bottom: 14px;
+}
+
+.feed-popup .feed-content .desc {
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 20px;
+}
+
+.feed-popup .feed-content .divider {
+    color: #ED6D1E;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ED6D1E;
+    font-size: 16px;
+}
+
+.feed-popup .feed-content .answers {
+    overflow-y: auto;
+    max-height: 300px;
+    padding-right: 15px;
+}
+
+.feed-popup .feed-content .answer {
+    background-color: #f9f9f9;
+    color: black;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    font-weight: 300;
+    margin: 15px 0 5px 0;
+}
+
+.feed-popup .feed-content .answer .content {
+    min-height: 50px;
+    padding: 0 0 10px 60px;
+}
+
+.like-block {
+    float: right;
+    margin-top: -30px;
+}
+
+.feed-popup .user-info {
+    color: #FFFFFF;
+}
+
+.feed-popup .user-info .user-photo-square {
+    height: 240px;
+}
+
+.feed-popup .user-info .wrapper {
+    padding: 10px 5%;
+}
+
+.feed-popup-footer {
+    border-top: 2px solid #EBF1F5;
+}
+
+.feed-popup-footer .wrapper {
+    padding: 20px 5%;
+}
+
+.feed-popup-footer textarea.form-control {
+    height: 120px;
+}

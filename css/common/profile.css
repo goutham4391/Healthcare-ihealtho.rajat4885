@@ -1,0 +1,188 @@
+.profile .top {
+    position: relative;
+    display: block;
+    overflow: auto;
+    color: #FFFFFF;
+    min-height: 260px;
+}
+
+.profile.outer .main-photo.no-border-radius {
+    border-radius: 0;
+}
+
+.profile .map {
+    height: 400px;
+    width: 400px;
+}
+
+.profile .clinic-logo {
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    color: #000;
+}
+
+.profile .main-photo {
+    position: absolute;
+    border-radius: 8px;
+    left: 40px;
+    top: 30px;
+    height: 200px;
+    width: 230px;
+}
+
+.profile.outer .top {
+}
+
+.profile .top .information {
+    padding-left: 300px;
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.profile.outer .top .information .title {
+    color: #00A0E3;
+}
+
+.profile .top .information .title {
+    min-height: 35px;
+    padding: 30px 10px 20px 0;
+}
+
+.profile .top .information .title h1 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 30px 0 0;
+    display: inline-block;
+}
+
+.profile .top table .title-row {
+    color: #B2BDC4;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.profile .top table .title-row td{
+    padding-bottom: 5px;
+}
+
+.profile .top table .data-row td{
+    padding-bottom: 10px;
+    font-size: 13px
+}
+
+.profile.outer .top table .data-row td{
+    color: #000000;
+}
+
+.profile .top table td:last-child {
+    padding-left: 20px;
+}
+
+.profile .bottom .title {
+    padding: 10px 0;
+    font-weight: 400;
+    color: #00A0E3;
+    font-size: 18px;
+}
+
+.invite-button {
+    margin-right: 150px;
+}
+
+.profile.patient .main-photo {
+
+}
+
+.profile.patient .information {
+    color: #4F8C6C;
+}
+
+.profile .top > table tr td {
+    vertical-align: top;
+}
+
+.profile .information .table tr td {
+    border-top: none;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.profile.patient .information .table tr td.name:first-child {
+    width: auto;
+}
+
+.profile.patient .information table tr td.name {
+    width: 18%;
+    color: #3E6280;
+}
+
+.profile.patient .information table tr td.value {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.profile.patient .bottom .wrapper {
+    margin: 0 1.5%;
+}
+
+.profile.patient .bottom h4.title {
+    color: #4F8C6C;
+    font-size: 15px;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.profile.patient .bottom .info-block {
+    width: 25%;
+    margin: 0 1.5% 0 0;
+    display: inline-block;
+}
+
+.profile.patient .bottom .info-block .block-title {
+    color: #78868F;
+    margin-bottom: 10px;
+}
+
+.profile.patient .bottom .info-block p {
+    color: #3E6280;
+}
+
+.profile .about-scroll {
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.location {
+    font-size: 0;
+}
+
+.location .field {
+    display: inline-block;
+    padding-right: 10px;
+    vertical-align: top;
+    margin-bottom: 10px;
+}
+
+.location .field .title {
+    font-size: 14px;
+    color: #3A3F53;
+    padding: 5px 0;
+    font-weight: 300;
+}
+
+.location .field .data {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #ffffff;
+    font-size: 14px;
+    padding: 5px 10px;
+    color: #6F7E95;
+}

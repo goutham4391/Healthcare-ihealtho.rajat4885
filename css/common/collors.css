@@ -1,0 +1,24 @@
+.success-color {
+    color: #4F8A10;
+}
+.success-background {
+    background-color: #DFF2BF;
+}
+.info-color {
+    color: #00529B;
+}
+.info-background {
+    background-color: #BDE5F8;
+}
+.warning-color {
+    color: #9F6000;
+}
+.warning-background {
+    background-color: #FEEFB3;
+}
+.error-color {
+    color: #D8000C;
+}
+.error-background {
+    background-color: #FFBABA;
+}

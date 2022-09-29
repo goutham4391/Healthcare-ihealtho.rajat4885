@@ -1,0 +1,50 @@
+.loginarea {
+    width: auto;
+    height: auto;
+    float: right;
+    display: inline-block;
+    padding-top: 40px;
+}
+
+.loginarea a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+.loginarea a.act {
+    background-color: white;
+    color: #00A0E3;
+}
+
+.login-form {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 0 0 10%;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.login-form .sf-100 {
+    width: 80%;
+    height: auto;
+    padding: 10px 0;
+    float: left;
+    margin: 0 10%;
+}
+
+.login-form .sf-full {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    float: left;
+    margin: 10px 0 0 0;
+}

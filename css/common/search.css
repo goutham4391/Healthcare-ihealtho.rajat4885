@@ -1,0 +1,145 @@
+.search {
+    min-width: 400px;
+}
+
+#search-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 3px solid #3BC0C3;
+    border-top: 3px solid #3BC0C3;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
+}
+
+.search .search-results {
+    padding: 20px;
+}
+
+.search-switcher {
+    max-width: 170px;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 5px;
+    border: 1px solid #BECAD4;
+    background-color: white;
+    margin: 20px 10px;
+    font-size: 14px;
+}
+
+.search-switcher a {
+    width: 50%;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000000;
+    white-space: nowrap;
+    padding: 0 10px 0 30px;
+    position: relative;
+}
+
+.search-switcher a.right {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.search-switcher a.left {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.search-switcher a.active {
+    color: #ffffff;
+    background: rgb(0, 166, 88);
+    background: -moz-linear-gradient(top, rgba(0, 166, 88, 1) 0%, rgba(19, 107, 60, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 166, 88, 1)), color-stop(100%, rgba(19, 107, 60, 1)));
+    background: -webkit-linear-gradient(top, rgba(0, 166, 88, 1) 0%, rgba(19, 107, 60, 1) 100%);
+    background: -o-linear-gradient(top, rgba(0, 166, 88, 1) 0%, rgba(19, 107, 60, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(0, 166, 88, 1) 0%, rgba(19, 107, 60, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 166, 88, 1) 0%, rgba(19, 107, 60, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00a658', endColorstr='#136b3c', GradientType=0);
+}
+
+.search-switcher a i {
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+
+.search-results .block {
+    background-color: white;
+    border-radius: 8px;
+    font-size: 0;
+    float: left;
+    width: 100%;
+    max-width: 460px;
+    margin: 0 20px 20px 0;
+}
+
+.search-results .block .photo,
+.search-results .block .info {
+    display: inline-block;
+    vertical-align: top;
+    height: 150px;
+    font-size: 14px;
+}
+
+.search-results .block .photo {
+    width: 33%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-position: center center;
+}
+
+.search-results .block .info {
+    width: 67%;
+    padding: 10px 10px 0 10px;
+}
+
+.search-results .block .desc {
+    margin-bottom: 100px;
+}
+
+.search-results .block .name {
+    padding: 0;
+}
+
+.search-switcher a,
+.search-results .block .name,
+.search-results .block .desc span {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.search-results .block .desc span:first-child {
+    color: #ED6D1E;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.search-results .block .desc span {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.search-results .block .buttons {
+    float: left;
+    width: 100%;
+}
+
+.search-results .block .buttons a {
+    float: right;
+}
+
+.search-results .block .buttons a i {
+    padding-left: 10px;
+}

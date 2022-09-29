@@ -1,0 +1,85 @@
+.payment .column {
+    margin-top: 25px;
+}
+
+.payment .column.pdr5 {
+    padding-right: 5%;
+}
+
+.payment .with-icon {
+    margin-bottom: 10px;
+}
+
+.payment .with-icon p {
+    padding: 2px 0 0 45px;
+}
+
+.payment .with-icon i {
+    font-size: 40px;
+    position: absolute;
+    color: #B2BDC4;
+}
+
+.payment .text {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.payment .explain-text {
+    font-size: 20px;
+    font-weight: 500;
+    color: #00A0E3;
+}
+
+.payment .total-income {
+    color: #FFFFFF;
+    background-color: #00A0E3;
+    text-align: center;
+    width: 250px;
+    float: right;
+}
+
+.payment .total-income > div {
+    margin-bottom: 10px;
+}
+
+.payment .total-income .amount{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.payment .filter {
+}
+
+.payment .filter .select2 {
+    text-align: left;
+    display: inline-block;
+}
+.payment-status,
+.payment-type {
+    border-radius: 5px;
+    padding: 5px 12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.payment-status.success {
+    background-color: #38BD7B;
+}
+
+.payment-status.pending {
+    background-color: #EF7F1A;
+}
+
+.payment-type.single {
+    background-color: #38BD7B;
+}
+
+.payment-type.free {
+    background-color: #a7a7a7;
+}
+
+.payment-type.subscription,
+.payment-type.prioritized {
+    background-color: #EF7F1A;
+}

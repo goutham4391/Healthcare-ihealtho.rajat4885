@@ -1,0 +1,80 @@
+.sign-up h2 {
+    color: #00A0E3;
+    font-size: 60px;
+    margin: 20px 0;
+    font-weight: 200;
+    text-align: center;
+}
+
+#sign-up-box {
+    margin: 20px auto;
+}
+
+.sign-up .button-box {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
+
+.sign-up.doctor .button-box .btn.sign-up-button,
+.sign-up.clinic .button-box .btn.sign-up-button,
+.sign-up.patient .button-box .btn.sign-up-button {
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn.sign-up-button {
+    width: 100%;
+    height: 55px;
+    line-height: 55px;
+    padding: 0;
+    background: #2BA94B;
+    border-radius: 6px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 3px 0 #3E7D51;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.btn.sign-up-button,
+.btn.sign-up-button:hover,
+.btn.sign-up-button:focus {
+    color: #ffffff;
+}
+
+.sign-up-button:active {
+    box-shadow: none;
+}
+
+.forgot-password-block {
+    text-align: center;
+    color: #00A0E3;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 60px;
+    background-color: #EBF1F5;
+}
+
+.sign-up #sign-up-box .form {
+    padding: 10px 30px;
+    float: left;
+}
+
+.sign-up {
+    background: #068fc8 url(../../img/signup1.jpg) center center no-repeat;
+}
+.sign-up.doctor {
+    background: #068fc8 url(../../img/signup2.jpg) center center no-repeat
+}
+.sign-up.patient {
+    background: #068fc8 url(../../img/signup1.jpg) center center no-repeat;
+}
+.sign-up.clinic {
+    background: #068fc8 url(../../img/signup3.jpg) center center no-repeat;
+}
+.form p.policy {
+    color: #000000;
+    line-height: 16px;
+    padding: 0 2%;
+}

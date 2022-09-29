@@ -1,0 +1,49 @@
+.activity-left,
+.profile-left-column {
+    color: #ffffff;
+    width: 250px;
+    float: left;
+    position: relative;
+}
+
+.profile-right-column {
+    color: #FFFFFF;
+    width: 250px;
+    position: relative;
+    float: right;
+}
+
+.activity-left .wrapper {
+    padding: 10px 0 0 5%;
+}
+.activity-left .title {
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.activity-left .activity-block {
+    position: relative;
+    margin: 14px 8px 14px 0;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 15%;
+}
+.activity-left .activity-block p {
+    line-height: 18px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.activity-left .activity-block span{
+    color: #EEEEEE;
+    font-size: 12px;
+}
+.activity-block i {
+    position: absolute;
+    left: 0;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    opacity: 0.5;
+    color: #eee;
+}

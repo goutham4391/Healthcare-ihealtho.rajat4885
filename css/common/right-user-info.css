@@ -1,0 +1,17 @@
+.right-user-info {
+    padding: 10px 10% 0 10%;
+    color: white;
+    min-width: 210px;
+}
+
+.right-user-info .about-scroll {
+    font-size: 12px;
+    line-height: 1.4;
+    font-weight: 300;
+    overflow: hidden;
+}
+
+#about-form textarea {
+    resize: vertical;
+    height: 150px;
+}
